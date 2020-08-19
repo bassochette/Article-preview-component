@@ -13,7 +13,6 @@ body {
     flex-direction: row;
 
     border-radius: 10px;
-    overflow: hidden;
 
     font-size: 13px;
     font-weight: 500;
@@ -98,9 +97,61 @@ body {
 .share {
     border-radius: 100%;
     background-color: hsl(210, 46%, 95%);
-    height: 2.5em;
+    color: hsl(217, 19%, 35%);
+    min-height: 2.5em;
+    min-width: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.share > img {
-    margin: 0.5em;
+.share:hover,
+.share--active
+{
+    background-color: hsl(214, 17%, 51%);
+    /*color: hsl(210, 46%, 95%);*/
+    color: #FFFFFF;
+}
+.share_tooltip {
+    /*max-width: 50%;*/
+    padding: 0.85em 1.8em;
+    border-radius: 10px;
+    background-color: hsl(217, 19%, 35%);
+    font-size: 1.5em;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    z-index: 100;
+    bottom: 186%;
+    left: -120px;
+
+    box-shadow: 0.125em 0.25em 37px 1px hsl(210, 46%, 89%);
+}
+.share_tooltip_text {
+    color: hsl(212, 17%, 69%);
+    font-weight: 500;
+    font-size: 0.65em;
+    letter-spacing: 0.4em;
+}
+.share_tooltip::after {
+    clear: both;
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 13px;
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+.tooltip-icon {
+    margin-left: 1em;
+}
+
+.hidden {
+    display: none;
 }

@@ -14,14 +14,14 @@ The designs were created to the following widths:
 - Grayish Blue: hsl(212, 23%, 69%)
 - Light Grayish Blue: hsl(210, 46%, 95%)
 
-## Typography
+## Typography  
 
 ### Body Copy
 
 - Font size: 13px
 
 ### Headings
-
+~~~~
 - Family: [Manrope](https://fonts.google.com/specimen/Manrope)
 - Weights: 500, 700
 

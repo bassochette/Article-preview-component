@@ -16,6 +16,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 
+  <link rel="stylesheet" href="/css/iconmoon-font.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -52,8 +53,14 @@
           </p>
         </div>
       </div>
-      <div class="share">
-        <img src="/images/icon-share.svg" alt="share icon">
+      <div class="share" id="share-button">
+        <i class="icon-share"></i>
+        <span class="share_tooltip hidden" id="share-tooltip">
+          <span class="share_tooltip_text">SHARE</span>
+          <i class="tooltip-icon icon-facebook"></i>
+          <i class="tooltip-icon icon-twitter"></i>
+          <i class="tooltip-icon icon-pinterest"></i>
+        </span>
       </div>
     </div>
   </section>
@@ -64,5 +71,7 @@
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
   Coded by <a href="#">Julien Prugne & Anne-Bérengère Gesset</a>.
 </div>
+
+<script src="/js/app.js"></script>
 </body>
 </html>
