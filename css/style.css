@@ -1,0 +1,106 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Manrope', sans-serif;
+
+    box-shadow: 1em 2em 37px 5px hsl(210, 46%, 89%);
+    padding: 0;
+    margin: 0;
+
+    max-width: 740px;
+}
+
+.image {
+    padding: 0;
+    margin: 0;
+    width: 45%;
+    overflow: hidden;
+}
+
+.image > img {
+    width: auto;
+    height: 10px;
+    min-height: 100%;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2.96em;
+    width: 55%;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.5em;
+    color: hsl(217, 19%, 35%);
+    margin: 0;
+    padding: 0;
+}
+
+.description {
+    font-size: 1em;
+    color: hsl(214, 17%, 51%);
+    margin-bottom: 1.5em;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.author_container {
+    padding-left: 1em;
+}
+
+.author_container > p {
+    margin: 0 0 0.1em;
+}
+.author_name {
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+.article_date {
+    color: hsl(212, 23%, 69%);
+}
+
+.avatar {
+    border-radius: 100%;
+    height: 3em;
+}
+
+.share {
+    border-radius: 100%;
+    background-color: hsl(210, 46%, 95%);
+    height: 2.5em;
+}
+
+.share > img {
+    margin: 0.5em;
+}
