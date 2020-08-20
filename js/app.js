@@ -8,7 +8,7 @@
             if(tooltip.classList.contains('hidden')) {
                tooltip.classList.remove('hidden');
                shareButton.classList.add('share--active');
-               cardFooter.classList.add('has-couleurshare-background')
+               cardFooter.classList.add('has-darkgrey-background')
             } else {
                tooltip.classList.add('hidden');
                shareButton.classList.remove('share--active');
