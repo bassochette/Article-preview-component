@@ -35,7 +35,7 @@ body {
     justify-content: space-evenly;
 }
 
-.title {
+.card_content_header {
     font-weight: 700;
     color: hsl(217, 19%, 35%);
     margin: 0;
@@ -174,7 +174,7 @@ body {
         padding: 2.96em 2.5em 1em 2.5em;
     }
 
-    .title {
+    .card_content_header {
         font-size: 1.2em;
         line-height: 1.5em;
     }
@@ -231,7 +231,7 @@ body {
         padding: 2.96em;
     }
 
-    .title {
+    .card_content_header {
         font-size: 1.5em;
     }
 
