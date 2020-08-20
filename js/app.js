@@ -12,7 +12,7 @@
             } else {
                tooltip.classList.add('hidden');
                shareButton.classList.remove('share--active');
-               cardFooter.classList.remove('has-couleurshare-background');
+               cardFooter.classList.remove('has-darkgrey-background');
             }
         });
 })();
