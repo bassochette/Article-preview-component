@@ -42,13 +42,13 @@ body {
     padding: 0;
 }
 
-.description {
+.card_content_body {
     font-size: 1em;
     color: hsl(214, 17%, 51%);
     margin-bottom: 1.5em;
 }
 
-.footer {
+.card_content_footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -179,7 +179,7 @@ body {
         line-height: 1.5em;
     }
 
-    .description {
+    .card_content_body {
         font-size: 0.99em;
         margin-bottom: 2.5em;
         line-height: 1.5em;
