@@ -29,7 +29,7 @@ body {
     overflow: hidden;
 }
 
-.article {
+.card_content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -170,7 +170,7 @@ body {
         top: 8%;
     }
 
-    .article {
+    .card_content {
         padding: 2.96em 2.5em 1em 2.5em;
     }
 
@@ -226,7 +226,7 @@ body {
         min-height: 100%;
     }
 
-    .article {
+    .card_content {
         width: 55%;
         padding: 2.96em;
     }
