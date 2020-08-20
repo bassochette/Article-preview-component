@@ -46,6 +46,7 @@ body {
     font-size: 1em;
     color: hsl(214, 17%, 51%);
     margin-bottom: 1.5em;
+    line-height: 1.5em;
 }
 
 .card_content_footer {
@@ -104,7 +105,6 @@ body {
 
 .share_tooltip {
     /*max-width: 50%;*/
-    padding: 0.85em 1.8em;
     border-radius: 10px;
     background-color: hsl(217, 19%, 35%);
     font-size: 1.5em;
@@ -155,11 +155,13 @@ body {
     }
 
     .image {
-        width: 10px;
-        min-width: 100%;
-        max-height: 200px;
+        height: 200px;
+        /*min-width: 100%;*/
+        /*max-height: 200px;*/
         display: flex;
         align-items: center;
+        border-radius: 10px 10px 0px 0px;
+
     }
 
     .image > img {
@@ -171,18 +173,31 @@ body {
     }
 
     .card_content {
-        padding: 2.96em 2.5em 1em 2.5em;
+        overflow: hidden;
     }
 
     .card_content_header {
         font-size: 1.2em;
         line-height: 1.5em;
+        padding-top: 40px;
+        padding-right: 33px;
+        padding-left: 33px;
     }
 
     .card_content_body {
         font-size: 0.99em;
-        margin-bottom: 2.5em;
         line-height: 1.5em;
+        padding-top: 15px;
+        padding-right: 33px;
+        padding-left: 33px;
+    }
+
+    .card_content_footer {
+        border-radius: 0px 0px 10px 10px;
+        padding-right: 33px;
+        padding-left: 33px;
+        padding-bottom: 13px;
+        padding-top: 14px
     }
 
     .author_name {
@@ -202,11 +217,18 @@ body {
 
     .share_tooltip {
         position: absolute;
-        z-index: 100;
+        /*z-index: 100;*/
         bottom: -56%;
-        left: -100px;
+        left: -255px;
+        height: 36px;
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: none;
+        padding: 0.85em 1.6em 0.85em 1.8em;
     }
 
+    .has-couleurshare-background {
+        background-color: hsl(217, 19%, 35%);
+    }
 }
 
 @media only screen and (min-width: 901px) {
@@ -217,7 +239,9 @@ body {
     }
 
     .image {
-        width: 45%;
+        width: 40%;
+        border-radius: 10px 0px 0px 10px;
+
     }
 
     .image > img {
@@ -228,11 +252,23 @@ body {
 
     .card_content {
         width: 55%;
-        padding: 2.96em;
+        padding: 2.96em 2.96em 1.96em 2.96em;
     }
+
+    /*.card-content {*/
+    /*    padding: 1.3em 0em 1.3em 0em;*/
+    /*}*/
 
     .card_content_header {
         font-size: 1.5em;
+    }
+
+    .card_content_body{
+        padding-top: 1em;
+    }
+
+    .share_tooltip {
+        padding: 0.85em 1.8em;
     }
 
 }
